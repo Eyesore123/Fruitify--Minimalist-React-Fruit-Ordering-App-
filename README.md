@@ -69,8 +69,10 @@ npm install fruitify
 cd fruitify
 ```
 
-# 🎉 Why Choose Fruitify?
-🍉 A minimalist UI focused on usability.
-🍋 Fast product search, filter, and pagination.
-🍒 Built with scalable technologies for maximum performance.
+## 🎉 **Why Choose Fruitify?**
+---------------------------
+
+🍉 A **minimalist UI** focused on usability.
+🍋 Fast **product search, filter, and pagination**.
+🍒 Built with **scalable technologies** for maximum performance.
 🍍 Perfect for learning or deploying a modern e-commerce app.
