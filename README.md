@@ -31,7 +31,7 @@ Fruitify is a sleek, feature-packed React-based application designed for orderin
 
 ## 🖥️ **Website Preview**
 
-[✨ Include Your Website Screenshots or GIFs Here ✨]
+[✨ Not Available Right Now ✨]
 
 ---
 
@@ -69,8 +69,8 @@ npm install fruitify
 cd fruitify
 ```
 
-## 🎉 **Why Choose Fruitify?**
 ---------------------------
+# 🎉 **Why Choose Fruitify?**
 
 🍉 A **minimalist UI** focused on usability. <br>
 🍋 Fast **product search, filter, and pagination**. <br>
