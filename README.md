@@ -76,3 +76,42 @@ cd fruitify
 🍋 Fast **product search, filter, and pagination**. <br>
 🍒 Built with **scalable technologies** for maximum performance. <br>
 🍍 Perfect for learning or deploying a modern e-commerce app.  
+---------------------------
+
+
+# 🤝 **Contributing Guidelines**
+------------------------------
+
+We welcome contributions from the community! Follow the steps below to get started:
+
+1.  **Fork the Repository**  
+Click the "Fork" button at the top-right of this repository to create your copy.
+    
+2.  **Clone Your Forked Repository**  
+    ``` clone https://github.com/your-username/fruitify.git```
+    
+3.  **Create a Branch**  
+    Create a branch for your feature or bug fix:  
+    ```git checkout -b feature-name```
+    
+4.  **Make Changes**  
+Implement your feature or bug fix. Please ensure the code is clean and adheres to the existing code style.
+    
+5.  **Test Your Changes**  
+Run the app locally to ensure your changes work as expected:  
+    ```npm run dev```
+    
+6.  **Commit Your Changes**  
+  Write a clear and concise commit message:  
+    ```git commit -m "Add: Feature description"```
+    
+7.  **Push to Your Branch**  
+    ```git push origin feature-name```
+    
+8.  **Submit a Pull Request**  
+    Go to the original repository, click on "Pull Requests," and submit your PR. Describe your changes and link any relevant issues.
+    
+
+### 🛡️ Code of Conduct
+
+By contributing to this project, you agree to adhere to the [Code of Conduct](#).
