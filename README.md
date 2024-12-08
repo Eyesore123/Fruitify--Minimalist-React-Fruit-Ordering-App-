@@ -72,7 +72,7 @@ cd fruitify
 ## 🎉 **Why Choose Fruitify?**
 ---------------------------
 
-🍉 A **minimalist UI** focused on usability.
-🍋 Fast **product search, filter, and pagination**.
-🍒 Built with **scalable technologies** for maximum performance.
-🍍 Perfect for learning or deploying a modern e-commerce app.
+🍉 A **minimalist UI** focused on usability. <br>
+🍋 Fast **product search, filter, and pagination**. <br>
+🍒 Built with **scalable technologies** for maximum performance. <br>
+🍍 Perfect for learning or deploying a modern e-commerce app.  
