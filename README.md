@@ -75,7 +75,8 @@ cd fruitify
 🍉 A **minimalist UI** focused on usability. <br>
 🍋 Fast **product search, filter, and pagination**. <br>
 🍒 Built with **scalable technologies** for maximum performance. <br>
-🍍 Perfect for learning or deploying a modern e-commerce app.  
+🍍 Perfect for learning or deploying a modern e-commerce app. 
+
 ---------------------------
 
 
@@ -88,27 +89,37 @@ We welcome contributions from the community! Follow the steps below to get start
 Click the "Fork" button at the top-right of this repository to create your copy.
     
 2.  **Clone Your Forked Repository**  
-    ``` clone https://github.com/your-username/fruitify.git```
+    ```bash
+    clone [https://github.com/your-username/fruitify.git](https://github.com/Muhammad-waqas1/Fruitify---Minimalist-React-Fruit-Ordering-App-.git)
+    ```
     
-3.  **Create a Branch**  
+4.  **Create a Branch**  
     Create a branch for your feature or bug fix:  
-    ```git checkout -b feature-name```
+    ```bash
+    git checkout -b feature-name
+    ```
     
-4.  **Make Changes**  
+5.  **Make Changes**  
 Implement your feature or bug fix. Please ensure the code is clean and adheres to the existing code style.
     
-5.  **Test Your Changes**  
+6.  **Test Your Changes**  
 Run the app locally to ensure your changes work as expected:  
-    ```npm run dev```
+    ```bash
+    npm run dev
+    ```
     
-6.  **Commit Your Changes**  
+7.  **Commit Your Changes**  
   Write a clear and concise commit message:  
-    ```git commit -m "Add: Feature description"```
+    ```bash
+    git commit -m "Add: Feature description"
+    ```
     
-7.  **Push to Your Branch**  
-    ```git push origin feature-name```
+8.  **Push to Your Branch**  
+    ```bash
+    git push origin feature-name
+    ```
     
-8.  **Submit a Pull Request**  
+9.  **Submit a Pull Request**  
     Go to the original repository, click on "Pull Requests," and submit your PR. Describe your changes and link any relevant issues.
     
 
