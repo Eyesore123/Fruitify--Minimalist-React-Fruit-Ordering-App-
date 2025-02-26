@@ -39,9 +39,105 @@ Fruitify is a sleek, feature-packed React-based application designed for orderin
 
 Follow these steps to set up the project locally:
 
+## 🔥 Firebase Setup
+
+To run Fruitify locally, you need to set up Firebase authentication. Follow these steps:
+
+1. **Create a Firebase Project**
+   - Go to [Firebase Console](https://console.firebase.google.com/).
+   - Click **"Create a Project"** and follow the setup steps.
+
+2. **Get Your Firebase Config Object**
+   - Inside your Firebase project, navigate to **Project Settings** > **General**.
+   - Scroll down to **"Your apps"** and click **"Add app"** (Choose Web).
+   - Register the app, and Firebase will generate a config object like this:
+
+   ```javascript
+   const firebaseConfig = {
+     apiKey: "YOUR_API_KEY",
+     authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+     projectId: "YOUR_PROJECT_ID",
+     storageBucket: "YOUR_PROJECT_ID.appspot.com",
+     messagingSenderId: "YOUR_SENDER_ID",
+     appId: "YOUR_APP_ID"
+   };
+
+3. **Create a Firebase Config File**
+
+*   Inside your project, create a new file named firebase.config.js in the src folder.
+    
+*   Paste your Firebase configuration inside:
+    
+
+    ```javascript
+    import { initializeApp } from "firebase/app";
+    
+    const firebaseConfig = {
+    
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_PROJECT_ID.appspot.com",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID"
+    
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    
+    export default app;
+
+>⚠️ Alternative Method: You can store Firebase credentials in a .env file instead of firebase.config.js.  
+
+- Create a .env file in your root folder and add:
+    ```ini
+    REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
+REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_PROJECT_ID.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_PROJECT_ID.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_SENDER_ID
+REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
+
+- Update firebase.config.js:
+
+    ```javascript
+    import { initializeApp } from "firebase/app";
+    const firebaseConfig = {
+      apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+      authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+      projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+      storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.REACT_APP_FIREBASE_APP_ID
+    };
+
+    const app = initializeApp(firebaseConfig);
+    
+    export default app;
+
+
+
+4. **Run the Development Server**  
+Now, you can start the local server:
+
+```
+npm run dev
+
+```
+
+#### **2️⃣ Mention Firebase in the "Getting Started" Section**
+
+Before step **"npm run dev"**, add a note:
+
+
+>⚠️ Note: Before running the development server, make sure you have set up Firebase as described in the [Firebase Setup](#firebase-setup) section.
+
+
+
+
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/your-username/fruitify.git
+git clone https://github.com/Muhammad-waqas1/Fruitify--Minimalist-React-Fruit-Ordering-App-.git
 ```
 
 ### 2️⃣ Navigate to Project Directory
@@ -90,7 +186,7 @@ Click the "Fork" button at the top-right of this repository to create your copy.
     
 2.  **Clone Your Forked Repository**  
     ```bash
-    clone [https://github.com/your-username/fruitify.git](https://github.com/Muhammad-waqas1/Fruitify---Minimalist-React-Fruit-Ordering-App-.git)
+    clone https://github.com/Muhammad-waqas1/Fruitify--Minimalist-React-Fruit-Ordering-App-.git
     ```
     
 4.  **Create a Branch**  
@@ -123,6 +219,8 @@ Run the app locally to ensure your changes work as expected:
     Go to the original repository, click on "Pull Requests," and submit your PR. Describe your changes and link any relevant issues.
     
 
-### 🛡️ Code of Conduct
+### 🛡️ License
 
-By contributing to this project, you agree to adhere to the [Code of Conduct](#).
+This project is open-source and available under the [MIT License](LICENSE).
+
+>_⭐ If you like this project, don't forget to give it a star! Your support is much appreciated! ✨_
