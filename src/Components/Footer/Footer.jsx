@@ -69,12 +69,15 @@ const Footer = () => {
                 type="email"
                 placeholder="Enter your mail"
                 className="form-control "
+                name="email"
+                autoComplete="off"
+                required
               />
               <motion.button
                 whileTap={{ scale: 1.3 }}
                 className="btn btn-danger px-3"
               >
-                <i class="ri-send-plane-fill"></i>
+                <i className="ri-send-plane-fill"></i>
               </motion.button>
             </div>
           </Col>
@@ -94,22 +97,22 @@ const Footer = () => {
               <p className="m-0 text-center fw-bold">Follow Us</p>
               <span>
                 <Link to="#">
-                  <i class="ri-facebook-circle-fill"></i>
+                  <i className="ri-facebook-circle-fill"></i>
                 </Link>
               </span>
               <span>
                 <Link to="#" target="_blank">
-                  <i class="ri-linkedin-box-fill"></i>
+                  <i className="ri-linkedin-box-fill"></i>
                 </Link>
               </span>
               <span>
                 <Link to="#">
-                  <i class="ri-github-fill"></i>
+                  <i className="ri-github-fill"></i>
                 </Link>
               </span>
               <span>
                 <Link to="#">
-                  <i class="ri-youtube-fill"></i>
+                  <i className="ri-youtube-fill"></i>
                 </Link>
               </span>
             </div>

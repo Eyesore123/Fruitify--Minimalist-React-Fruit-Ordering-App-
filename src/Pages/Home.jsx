@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, ListGroup, ListGroupItem, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import Helmet from "../Components/Helmet/Helmet";
 import heroImg from "../../public/delivery-boy-1.jpg";
 // import heroImg from "../assets/images/hero.png";
@@ -10,15 +10,11 @@ import { motion } from "framer-motion";
 import Service from "../Components/Service/Service";
 
 import products from "../assets/fake-data/products";
-
 import productImg01 from "../assets/images/hamburger.png";
 import productImg02 from "../assets/images/pizza.png";
 import productImg03 from "../assets/images/bread.png";
 import ProductCard from "../Components/ProductCard/ProductCard";
-
-import networkImg from "../assets/images/network.png";
 import About from "../Components/About/About";
-import TestimonialSlider from "../Components/Ui/TestimonialSlider";
 import Testimonial from "../Components/Testimonial/Testimonial";
 
 const Home = () => {

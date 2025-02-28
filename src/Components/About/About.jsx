@@ -38,7 +38,7 @@ const About = () => {
               <ListGroupItem className="border-0 ps-0">
                 <p className="fs-5  d-flex align-items-center gap-2">
                   {" "}
-                  <i class="ri-checkbox-circle-line text-danger"></i> Fresh and
+                  <i className="ri-checkbox-circle-line text-danger"></i> Fresh and
                   Authentic Fruits.
                 </p>
                 <p className="text-muted ">
@@ -51,7 +51,7 @@ const About = () => {
               <ListGroupItem className="border-0 ps-0">
                 <p className="fs-5 d-flex align-items-center gap-2">
                   {" "}
-                  <i class="ri-checkbox-circle-line text-danger"></i> Quality
+                  <i className="ri-checkbox-circle-line text-danger"></i> Quality
                   Support
                 </p>
                 <p className="pt-0 text-muted">
@@ -64,7 +64,7 @@ const About = () => {
               <ListGroupItem className="border-0 ps-0">
                 <p className="fs-5 d-flex align-items-center gap-2">
                   {" "}
-                  <i class="ri-checkbox-circle-line text-danger"></i> Super Fast
+                  <i className="ri-checkbox-circle-line text-danger"></i> Super Fast
                   Delivery System.
                 </p>
                 <p className="text-muted">

@@ -31,6 +31,18 @@ const CartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+    // Empty the cart after order
+
+    clearCart(state) {
+      state.cartItem = [];
+      state.totalQuantity = 0;
+      state.totalAmount = 0;
+      // Clear localStorage
+      localStorage.removeItem("cartItem");
+      localStorage.removeItem("totalAmount");
+      localStorage.removeItem("totalQuantity");
+    },
+
     // Add to Cart
     addItem(state, action) {
       const newItem = action.payload;

@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-import { ListGroup, ListGroupItem } from "reactstrap";
-import productImg from "../../assets/images/product_01.jpg";
+import { ListGroupItem } from "reactstrap";
 import { cartActions } from "../../Redux/Slices/CartSlice";
 import "../../Styles/Cart-item.css";
 
@@ -37,6 +36,7 @@ const CartItem = ({ item }) => {
     dispatch(cartActions.deleteItem(id));
     toast.success("Food Deleted Successfully");
   };
+
 
   return (
     // -------------Sidebar Cart Item --------------------
