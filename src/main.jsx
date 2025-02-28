@@ -14,7 +14,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+    future={{
+    v7_startTransition: true,
+    v7_relativeSplatPath: true,
+    }}
+    >
       <Provider store={store}>
         <ToastContainer
           // position="bottom-right"

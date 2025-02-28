@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Col, Container, FormGroup, Row } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../Components/Ui/CommonSection";
 import "../Styles/Checkout.css";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../Redux/Slices/CartSlice";
 
 const Checkout = () => {
   const [enterName, setEnterName] = useState("");
@@ -16,13 +18,13 @@ const Checkout = () => {
   const [enterAddress, setEnterAddress] = useState("");
   const navigate = useNavigate();
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-
   const fastDelivery = 10;
+  const dispatch = useDispatch();
 
   const placeOrder = () => {
-    console.log(`Clicked`);
+    // console.log(`Clicked`);
+    dispatch(cartActions.clearCart());
     navigate("/order");
   };
   const shippingInfo = [];

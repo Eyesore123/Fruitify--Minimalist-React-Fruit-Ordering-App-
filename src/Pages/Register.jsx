@@ -138,7 +138,7 @@ const Register = () => {
                     type="submit"
                     className="buy__btn auth__btn  text-center"
                   >
-                    Creat an account
+                    Create an account
                   </button>
 
                   <p className="mt-2">
